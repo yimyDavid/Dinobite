@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
         movespeed = 2;
-        jumpPower = 5;
+        jumpPower = 6;
     }
 	
 	// Update is called once per frame
