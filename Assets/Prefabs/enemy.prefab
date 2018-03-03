@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b55587a58f9cb844af6f9332ca89dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Blood: {fileID: 1164056008395292, guid: 8539f70b5547b5e4886156dca81ee35a, type: 2}
 --- !u!114 &114373247166388878
 MonoBehaviour:
   m_ObjectHideFlags: 1

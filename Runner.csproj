@@ -290,6 +290,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackAndForth.cs" />
     <Compile Include="Assets\Scripts\CollectFood.cs" />
+    <Compile Include="Assets\Scripts\DestroyParticleEffect.cs" />
     <Compile Include="Assets\Scripts\Hazards.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
   </ItemGroup>
