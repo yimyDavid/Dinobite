@@ -9,9 +9,12 @@ public class Player : MonoBehaviour {
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
+    public int treats;
+
     private bool onGround;
     private Animator anim;
     private int facing;
+
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
