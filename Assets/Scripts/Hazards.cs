@@ -6,6 +6,7 @@ public class Hazards : MonoBehaviour {
 
     private Player player;
     public GameObject Blood;
+    public AudioClip dieSound1;
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<Player>();
@@ -20,6 +21,7 @@ public class Hazards : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
+            SoundManager.instance.RandomizeSfx(dieSound1);
             StartCoroutine("respawndelay");
         }
     }

@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Blood: {fileID: 1164056008395292, guid: 8539f70b5547b5e4886156dca81ee35a, type: 2}
+  dieSound1: {fileID: 8300000, guid: ee2f66c5ed1cb41448c1430dd7985f3f, type: 3}
 --- !u!114 &114373247166388878
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -7,11 +7,11 @@ public class CollectFood : MonoBehaviour {
   
     public GameObject Bite;
     public Player player;
-    public AudioSource biteSound;
+    public AudioClip biteSound1;
+    public AudioClip biteSound2;
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<Player>();
-        biteSound = FindObjectOfType<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,8 @@ public class CollectFood : MonoBehaviour {
     {
         if(collision.tag == "Player")
         {
-            biteSound.Play();
+            //biteSound.Play();
+            SoundManager.instance.RandomizeSfx(biteSound1, biteSound2);
             player.treats++;
             Instantiate(Bite, this.transform.position, this.transform.rotation);
             Destroy(gameObject);
