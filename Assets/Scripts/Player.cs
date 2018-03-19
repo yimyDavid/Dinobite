@@ -10,6 +10,8 @@ public class Player : MonoBehaviour {
     public float groundCheckRadius;
     public LayerMask whatIsGround;
     public int treats;
+    public bool moveRight;
+    public bool moveLeft;
 
     private bool onGround;
     private Animator anim;
@@ -27,7 +29,7 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (moveLeft || Input.GetKey(KeyCode.LeftArrow))
         {
             rb.velocity = new Vector2(-movespeed, rb.velocity.y);
             anim.SetBool("Walking", true);
@@ -37,7 +39,7 @@ public class Player : MonoBehaviour {
             }
             facing = 0;
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (moveRight || Input.GetKey(KeyCode.RightArrow))
         {
             rb.velocity = new Vector2(movespeed, rb.velocity.y);
             anim.SetBool("Walking", true);
@@ -52,7 +54,8 @@ public class Player : MonoBehaviour {
             }
         if(Input.GetKey(KeyCode.Space) && onGround)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            // rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            jump();
         }
         
 	}
@@ -60,5 +63,12 @@ public class Player : MonoBehaviour {
     private void FixedUpdate()
     {
         onGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+    }
+
+    public void jump() {
+
+        if (onGround) {
+            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+        }
     }
 }
