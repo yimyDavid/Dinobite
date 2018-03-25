@@ -17,6 +17,7 @@ public class Player : MonoBehaviour {
     private Animator anim;
     private int facing;
 
+
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour {
         jumpPower = 6;
         facing = 1;
         anim = GetComponent<Animator>();
+       
 
     }
 	
