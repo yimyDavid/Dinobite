@@ -1,5 +1,5 @@
 Temp/
-Library/metadata/
+Library/metadata/*
 *.bin
 *.info
 *.log

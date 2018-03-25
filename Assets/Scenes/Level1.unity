@@ -1552,6 +1552,7 @@ MonoBehaviour:
   treats: 0
   moveRight: 0
   moveLeft: 0
+  Blood: {fileID: 1164056008395292, guid: 8539f70b5547b5e4886156dca81ee35a, type: 2}
 --- !u!95 &237918325
 Animator:
   serializedVersion: 3

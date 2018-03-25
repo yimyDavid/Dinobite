@@ -17,9 +17,11 @@ public class Player : MonoBehaviour {
     private Animator anim;
     private int facing;
 
+    public GameObject Blood;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         rb = GetComponent<Rigidbody2D>();
         movespeed = 2;
         jumpPower = 6;
@@ -72,5 +74,21 @@ public class Player : MonoBehaviour {
         if (onGround) {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
+    }
+
+    public void dying()
+    {
+        StartCoroutine("respawndelay");
+    }
+    public IEnumerator respawndelay()
+    {
+        Instantiate(Blood, this.transform.position, this.transform.rotation);
+        this.enabled = false;
+        this.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        this.GetComponent<Renderer>().enabled = false;
+        yield return new WaitForSeconds(1);
+        this.transform.position = new Vector2(-12.45f, 4.69f);
+        this.GetComponent<Renderer>().enabled = true;
+        this.enabled = true;
     }
 }
