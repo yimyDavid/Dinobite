@@ -22,7 +22,7 @@ public class Hazards : MonoBehaviour {
         if(other.tag == "Player")
         {
             SoundManager.instance.RandomizeSfx(dieSound1);
-            //StartCoroutine("respawndelay");
+           
             player.dying();
         }
     }
