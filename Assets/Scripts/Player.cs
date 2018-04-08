@@ -19,6 +19,10 @@ public class Player : MonoBehaviour {
 
     public GameObject Blood;
 
+    // Respawning position
+    public float startx;
+    public float starty;
+
 
     // Use this for initialization
     void Start () {
@@ -27,6 +31,8 @@ public class Player : MonoBehaviour {
         jumpPower = 6;
         facing = 1;
         anim = GetComponent<Animator>();
+        startx = transform.position.x;
+        starty = transform.position.y;
        
 
     }
@@ -87,7 +93,8 @@ public class Player : MonoBehaviour {
         this.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         this.GetComponent<Renderer>().enabled = false;
         yield return new WaitForSeconds(1);
-        this.transform.position = new Vector2(-12.45f, 4.69f);
+        //this.transform.position = new Vector2(-12.45f, 4.69f);
+        this.transform.position = new Vector2(startx, starty);
         this.GetComponent<Renderer>().enabled = true;
         this.enabled = true;
     }
