@@ -1,6 +1,7 @@
 Android
 SceneListBegin?
 Assets/Scenes/Level1.unity
+Assets/Scenes/Level2.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 970a95104359198fe1a98ef48655de8c UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -149,3 +150,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 088c5e7661b76a7fbe2a37cd03e95d49 Assembly-CSharp.dll:.Player
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Score
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Checkpoint
+baef386fbaf1e82b8a7953acbfff959e Assembly-CSharp.dll:.EndLevel

@@ -1,6 +1,8 @@
 Temp/
 Library/*
+Library/
 *.bin
 *.info
 *.log
 *.exe0.log
+.vs/*
