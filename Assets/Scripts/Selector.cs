@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Selector : MonoBehaviour {
 
     public bool moveLeft;
     public bool moveRight;
+    private string levelchoice;
 	// Use this for initialization
 	void Start () {
 		
@@ -27,12 +29,19 @@ public class Selector : MonoBehaviour {
 
         if(Input.GetKey(KeyCode.Space))
         {
+            //Debug.Log("test");
             selectLevel();
         }
 	}
 
     public void selectLevel()
     {
+        SceneManager.LoadScene(levelchoice);
+    }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        //Debug.Log(other.name);
+        levelchoice = other.name;
     }
 }
