@@ -294,8 +294,10 @@
     <Compile Include="Assets\Scripts\DestroyParticleEffect.cs" />
     <Compile Include="Assets\Scripts\EndLevel.cs" />
     <Compile Include="Assets\Scripts\Hazards.cs" />
+    <Compile Include="Assets\Scripts\LevelSelectTouch.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\Selector.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\SplashWater.cs" />
     <Compile Include="Assets\Scripts\Touch.cs" />
