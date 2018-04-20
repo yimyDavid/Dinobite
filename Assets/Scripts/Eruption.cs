@@ -9,7 +9,7 @@ public class Eruption : MonoBehaviour {
     
 	// Use this for initialization
 	void Start () {
-        InvokeRepeating("SpawnFire", spawnTime, spawnTime);
+         InvokeRepeating("SpawnFire", spawnTime, spawnTime);
         
 	}
 	

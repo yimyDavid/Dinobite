@@ -296,12 +296,14 @@
     <Compile Include="Assets\Scripts\Eruption.cs" />
     <Compile Include="Assets\Scripts\Hazards.cs" />
     <Compile Include="Assets\Scripts\LevelSelectTouch.cs" />
+    <Compile Include="Assets\Scripts\OrangutanPoints.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\Selector.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\SplashWater.cs" />
     <Compile Include="Assets\Scripts\Touch.cs" />
+    <Compile Include="Assets\Scripts\VolcanoCollider.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
