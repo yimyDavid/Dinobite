@@ -135,6 +135,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DestroyParticleEffect
+12b95c8f2b54918ab14825a44eeb4bd5 Assembly-CSharp.dll:.OrangutanPoints
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Touch
 bbe061356c01accf0797a51d52b4434a Assembly-CSharp.dll:.Hazards
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -154,6 +155,5 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 088c5e7661b76a7fbe2a37cd03e95d49 Assembly-CSharp.dll:.Player
 18b0b7b3323c13af2800b22ef393b508 Assembly-CSharp.dll:.Selector
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Score
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Checkpoint
 c11ad4166d1f11ec0ae55f8cb29b501e Assembly-CSharp.dll:.VolcanoCollider
-12b95c8f2b54918ab14825a44eeb4bd5 Assembly-CSharp.dll:.OrangutanPoints
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Checkpoint

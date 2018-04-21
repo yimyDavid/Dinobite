@@ -6500,11 +6500,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4133413709539544, guid: 832c374527364b44498354c1b54cbf6c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.23
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 4133413709539544, guid: 832c374527364b44498354c1b54cbf6c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.33
+      value: 3.29
       objectReference: {fileID: 0}
     - target: {fileID: 4133413709539544, guid: 832c374527364b44498354c1b54cbf6c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8156,6 +8156,55 @@ Transform:
   m_PrefabParentObject: {fileID: 4064009778372322, guid: 071e06bda46fc084c835834f0b844941,
     type: 2}
   m_PrefabInternal: {fileID: 970313951}
+--- !u!1 &974604914 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1333432384220790, guid: 1be7a3314bb42824eb270f73bb10513d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1304071099}
+--- !u!212 &974604915
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974604914}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c1783b7f39d1afe4caeccf716aa8eaa5, type: 3}
+  m_Color: {r: 0.72794116, g: 0.13916522, b: 0.13916522, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1001 &979959894
 Prefab:
   m_ObjectHideFlags: 0
@@ -9618,6 +9667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volcanoEruption: {fileID: 1026367832291434, guid: 1a380b66c350c034f8b0f4b12efd0217,
     type: 2}
+  vc: {fileID: 0}
   spawnTime: 4
 --- !u!1001 &1114492087
 Prefab:
@@ -11174,6 +11224,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4281022557715104, guid: 1be7a3314bb42824eb270f73bb10513d, type: 2}
       propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333432384220790, guid: 1be7a3314bb42824eb270f73bb10513d, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

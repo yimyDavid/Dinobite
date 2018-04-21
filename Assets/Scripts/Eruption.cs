@@ -5,11 +5,15 @@ using UnityEngine;
 public class Eruption : MonoBehaviour {
 
     public GameObject volcanoEruption;
+    public VolcanoCollider vc;
     public float spawnTime = 4f;
-    
+    public float spawnDuration = 3f;
+   
 	// Use this for initialization
 	void Start () {
-         InvokeRepeating("SpawnFire", spawnTime, spawnTime);
+        
+        InvokeRepeating("SpawnFire", spawnTime, spawnDuration);
+        
         
 	}
 	
@@ -21,7 +25,6 @@ public class Eruption : MonoBehaviour {
 
     void SpawnFire()
     {
-        Instantiate(volcanoEruption);
-        
+       Instantiate(volcanoEruption);        
     }
 }

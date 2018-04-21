@@ -4,24 +4,38 @@ using UnityEngine;
 
 public class VolcanoCollider : MonoBehaviour {
    
-    public float spawnTime = 4f;
+    public float spawnTime = 7f;
+    public float spawnDuration = 3f;
+    public int counter = 0;
+    public GameObject vc;
     // Use this for initialization
     void Start () {
-        if (gameObject.activeInHierarchy)
-            gameObject.SetActive(true);
-
-        StartCoroutine(LateCall());
+        //InvokeRepeating("HideShowCollider", spawnTime, spawnDuration);
+        StartCoroutine("HideUnhide");
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-    IEnumerator LateCall()
-    {
-        yield return new WaitForSeconds(spawnTime);
-        gameObject.SetActive(false);
-        Debug.Log("after 4 seconds");
+        //StartCoroutine("HideUnhide");
     }
+
+    
+
+    public IEnumerator HideUnhide()
+    {
+        while (true)
+        {
+            vc = this.transform.Find("volcanocollider").gameObject;
+            yield return new WaitForSeconds(3);
+            vc.SetActive(true);
+            //vc = this.transform.Find("volcanocollider").gameObject;
+            yield return new WaitForSeconds(2);
+            vc.SetActive(false);
+        }
+    }
+
+  
+
+   //TODO: use parent gameobject
+
 }
