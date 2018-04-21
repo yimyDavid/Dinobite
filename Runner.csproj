@@ -293,7 +293,6 @@
     <Compile Include="Assets\Scripts\CollectFood.cs" />
     <Compile Include="Assets\Scripts\DestroyParticleEffect.cs" />
     <Compile Include="Assets\Scripts\EndLevel.cs" />
-    <Compile Include="Assets\Scripts\Eruption.cs" />
     <Compile Include="Assets\Scripts\Hazards.cs" />
     <Compile Include="Assets\Scripts\LevelSelectTouch.cs" />
     <Compile Include="Assets\Scripts\OrangutanPoints.cs" />

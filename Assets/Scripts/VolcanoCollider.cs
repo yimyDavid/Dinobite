@@ -7,6 +7,7 @@ public class VolcanoCollider : MonoBehaviour {
     public float spawnTime = 7f;
     public float spawnDuration = 3f;
     public int counter = 0;
+    public GameObject eruption;
     public GameObject vc;
     // Use this for initialization
     void Start () {
@@ -23,13 +24,16 @@ public class VolcanoCollider : MonoBehaviour {
 
     public IEnumerator HideUnhide()
     {
+        vc = this.transform.Find("volcanocollider").gameObject;
         while (true)
         {
-            vc = this.transform.Find("volcanocollider").gameObject;
-            yield return new WaitForSeconds(3);
+            
+            yield return new WaitForSeconds(3f);
             vc.SetActive(true);
+            Instantiate(eruption, eruption.transform.position, eruption.transform.rotation);
+            //Debug.Log(this.transform.position);
             //vc = this.transform.Find("volcanocollider").gameObject;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(0.5f);
             vc.SetActive(false);
         }
     }

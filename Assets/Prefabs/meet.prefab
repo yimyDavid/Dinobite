@@ -82,6 +82,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bite: {fileID: 1371072366668682, guid: 3748544bcf9fa37449fa69d1e1a0754d, type: 2}
+  player: {fileID: 0}
+  biteSound1: {fileID: 0}
+  biteSound2: {fileID: 0}
 --- !u!212 &212932596554602700
 SpriteRenderer:
   m_ObjectHideFlags: 1
