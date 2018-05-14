@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class EndLevelController : MonoBehaviour {
 
     string LEVEL_SELECT_SCREEN = "LevelSelect";
-    string REPEAT_LEVEL = "Level1";
-    string NEXT_LEVEL = "Level2";
+    string REPEAT_LEVEL = HelperEndLevel.currentLevel;
+    string NEXT_LEVEL = HelperEndLevel.nextLevel;
     // Use this for initialization
     void Start () {
         

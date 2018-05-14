@@ -4,14 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EndLevel : MonoBehaviour {
+    public string scnEndLevel;
     public string nextLevel;
 	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    public string currentLevel;
+    
+    void Start ()
+    {
+        HelperEndLevel.setCurrentLevel(SceneManager.GetActiveScene().name);
+    }
+
+   // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -19,7 +23,10 @@ public class EndLevel : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            SceneManager.LoadScene(nextLevel);
+            
+            HelperEndLevel.setNextLevel(SceneManager.GetActiveScene().name);
+            Debug.Log(HelperEndLevel.nextLevel);
+            SceneManager.LoadScene(scnEndLevel);
         }
     }
 }
