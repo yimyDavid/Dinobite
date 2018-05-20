@@ -27,6 +27,17 @@ public class EndLevel : MonoBehaviour {
             HelperEndLevel.setNextLevel(SceneManager.GetActiveScene().name);
             Debug.Log(HelperEndLevel.nextLevel);
             SceneManager.LoadScene(scnEndLevel);
+
+        }
+
+        if (HelperEndLevel.isLastLevel())
+        {
+            Debug.Log("last");
+            HelperEndLevel.hideNextButton = false;
+        }
+        else
+        {
+            HelperEndLevel.hideNextButton = true;
         }
     }
 }

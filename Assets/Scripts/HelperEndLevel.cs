@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.SceneManagement;
 
 public class HelperEndLevel {
 
@@ -8,10 +9,13 @@ public class HelperEndLevel {
     static public string nextLevel;
 
     static public int scoreLevel = 0;
+    static int numberOfLevelScenes = EditorSceneManager.sceneCountInBuildSettings - 2;
+    static public bool hideNextButton = true;
+    public static int levelNumber;
 
     public static void setNextLevel(string levelName)
     {
-        int levelNumber = int.Parse(levelName[levelName.Length-1].ToString());
+        levelNumber = int.Parse(levelName[levelName.Length-1].ToString());
         nextLevel = "Level" + (levelNumber + 1).ToString();
     }
 
@@ -23,5 +27,11 @@ public class HelperEndLevel {
     public static string getNextLevel()
     {
         return nextLevel;
+    }
+
+    public static bool isLastLevel()
+    {
+        /* check if the level is the last one to hide the next button*/
+        return (levelNumber + 1) > numberOfLevelScenes;
     }
 }
