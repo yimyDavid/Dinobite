@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class HelperEndLevel {
 
@@ -9,7 +9,9 @@ public class HelperEndLevel {
     static public string nextLevel;
 
     public static int scoreLevel = 0;
-    static int numberOfLevelScenes = EditorSceneManager.sceneCountInBuildSettings - 2;
+    //static int numberOfLevelScenes = SceneManager.sceneCountInBuildSettings - 2;
+    static int numberOfLevelScenes = 2;
+
     static public bool hideNextButton = true;
     public static int levelNumber;
 
