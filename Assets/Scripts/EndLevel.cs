@@ -5,10 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EndLevel : MonoBehaviour {
     public string scnEndLevel;
-    public string nextLevel;
-	// Use this for initialization
-    public string currentLevel;
-    
+        
     void Start ()
     {
         HelperEndLevel.setCurrentLevel(SceneManager.GetActiveScene().name);

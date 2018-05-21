@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EndLevelController : MonoBehaviour {
 
@@ -9,16 +10,17 @@ public class EndLevelController : MonoBehaviour {
     string REPEAT_LEVEL = HelperEndLevel.currentLevel;
     string NEXT_LEVEL = HelperEndLevel.nextLevel;
 
+    Text ScoreLevel;
+
     GameObject nextButton;
     // Use this for initialization
     void Start () {
         nextButton = this.transform.Find("nextlevel").gameObject;
         
         nextButton.SetActive(HelperEndLevel.hideNextButton);
-        Debug.Log(HelperEndLevel.hideNextButton);
+        //Debug.Log(HelperEndLevel.hideNextButton);
 
-
-    }
+       }
 	
 	// Update is called once per frame
 	void Update () {

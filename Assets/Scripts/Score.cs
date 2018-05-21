@@ -14,6 +14,7 @@ public class Score : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        treats.text = "Treats: " + player.treats; 
+        treats.text = "Treats: " + player.treats;
+        HelperEndLevel.scoreLevel = player.treats;
 	}
 }

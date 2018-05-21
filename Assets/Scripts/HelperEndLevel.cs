@@ -8,7 +8,7 @@ public class HelperEndLevel {
     static public string currentLevel = "Level1";
     static public string nextLevel;
 
-    static public int scoreLevel = 0;
+    public static int scoreLevel = 0;
     static int numberOfLevelScenes = EditorSceneManager.sceneCountInBuildSettings - 2;
     static public bool hideNextButton = true;
     public static int levelNumber;
