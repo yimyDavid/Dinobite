@@ -7,6 +7,8 @@ TagManager:
   - ThrownToWater
   - Level1
   - Level2
+  - off
+  - on
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EndLevel : MonoBehaviour {
     public string scnEndLevel;
-        
+    public int levelValue;
     void Start ()
     {
         HelperEndLevel.setCurrentLevel(SceneManager.GetActiveScene().name);
@@ -22,19 +22,25 @@ public class EndLevel : MonoBehaviour {
         {
             
             HelperEndLevel.setNextLevel(SceneManager.GetActiveScene().name);
-            Debug.Log(HelperEndLevel.nextLevel);
+            // Debug.Log(HelperEndLevel.nextLevel);
+            SaveLevel(levelValue);
             SceneManager.LoadScene(scnEndLevel);
 
         }
 
         if (HelperEndLevel.isLastLevel())
         {
-            Debug.Log("last");
+            // Debug.Log("last");
             HelperEndLevel.hideNextButton = false;
         }
         else
         {
             HelperEndLevel.hideNextButton = true;
         }
+    }
+
+    public void SaveLevel(int level)
+    {
+        PlayerPrefs.SetInt("farthestLevel", level);
     }
 }
