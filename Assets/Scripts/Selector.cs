@@ -8,10 +8,11 @@ public class Selector : MonoBehaviour {
     public bool moveLeft;
     public bool moveRight;
     private string levelchoice;
+    public int farthestLevel;
 	// Use this for initialization
 	void Start () {
-		
-	}
+        farthestLevel = PlayerPrefs.GetInt("farthestLevel");
+    }
 	
 	// Update is called once per frame
 	void Update () {

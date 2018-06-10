@@ -11222,16 +11222,6 @@ Prefab:
       propertyPath: m_Name
       value: CaveLevel2
       objectReference: {fileID: 0}
-    - target: {fileID: 114977274626725358, guid: 0cefccf9ab56204498d487aadb2b216f,
-        type: 2}
-      propertyPath: nextLevel
-      value: Level2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114977274626725358, guid: 0cefccf9ab56204498d487aadb2b216f,
-        type: 2}
-      propertyPath: scnEndLevel
-      value: EndLevelScreen
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0cefccf9ab56204498d487aadb2b216f, type: 2}
   m_IsPrefabParent: 0

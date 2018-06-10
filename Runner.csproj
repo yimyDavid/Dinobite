@@ -296,6 +296,7 @@
     <Compile Include="Assets\Scripts\EndLevelController.cs" />
     <Compile Include="Assets\Scripts\Hazards.cs" />
     <Compile Include="Assets\Scripts\HelperEndLevel.cs" />
+    <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\LevelSelectTouch.cs" />
     <Compile Include="Assets\Scripts\OrangutanPoints.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
