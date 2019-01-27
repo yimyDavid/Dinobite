@@ -9,11 +9,16 @@ public class BackAndForth : MonoBehaviour {
     private float startx;
     private float starty;
     public int direction;
+    // 1 right, 0 left
+    public int startDirectionX;
     private Player player;
 	// Use this for initialization
 	void Start () {
         //direction = 0;
-        startx = gameObject.transform.position.x;
+        if (startDirectionX == 1)
+            startx = gameObject.transform.position.x;
+        else
+            startx = gameObject.transform.position.x - (float)amountToMove;
         starty = gameObject.transform.position.y;
         player = FindObjectOfType<Player>();
 	}
