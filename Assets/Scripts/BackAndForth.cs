@@ -17,7 +17,7 @@ public class BackAndForth : MonoBehaviour {
         //direction = 0;
         if (startDirectionX == 1)
             startx = gameObject.transform.position.x;
-        else
+        else if(startDirectionX == 0)
             startx = gameObject.transform.position.x - (float)amountToMove;
         starty = gameObject.transform.position.y;
         player = FindObjectOfType<Player>();

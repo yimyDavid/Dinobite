@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212650545848790028}
   - component: {fileID: 61586478561599500}
   - component: {fileID: 253918668975513050}
-  - component: {fileID: 114627320056440728}
+  - component: {fileID: 114256360478628748}
   m_Layer: 8
   m_Name: fire_lava
   m_TagString: Untagged
@@ -59,7 +59,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -68,7 +68,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114627320056440728
+--- !u!114 &114256360478628748
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -76,11 +76,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1173833546344776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e462d5eb609373a4f9f3d44e5c04931e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b55587a58f9cb844af6f9332ca89dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterSplash1: {fileID: 8300000, guid: 0735b02447279da45b6db2a45fe08bab, type: 3}
-  waterSplash2: {fileID: 8300000, guid: a60e1eef0191ba6409d0bdf55ae57607, type: 3}
+  Blood: {fileID: 1164056008395292, guid: 8539f70b5547b5e4886156dca81ee35a, type: 2}
+  dieSound1: {fileID: 8300000, guid: ee2f66c5ed1cb41448c1430dd7985f3f, type: 3}
 --- !u!212 &212650545848790028
 SpriteRenderer:
   m_ObjectHideFlags: 1
